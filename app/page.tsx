@@ -7,8 +7,8 @@ import Link from "next/link";
 import copyJSON from "@/app/database/copy.json";
 import navJSON from "@/app/database/nav.json";
 import contactJSON from "@/app/database/contact.json";
+import { Locale } from "./types";
 
-type Locale = "es" | "en";
 
 type SkillGroup = {
   title: string;
