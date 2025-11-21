@@ -1,0 +1,12 @@
+{
+  "es": [
+    { "label": "Correo", "value": "mariomars404@gmail.com", "href": "mailto:mariomars404@gmail.com" },
+    { "label": "LinkedIn", "value": "linkedin.com/in/marsdev", "href": "https://www.linkedin.com/in/mario-mart%C3%ADnez-693389254" },
+    { "label": "GitHub", "value": "github.com/marsDev10", "href": "https://github.com/marsDev10" }
+  ],
+  "en": [
+    { "label": "Email", "value": "mariomars404@gmail.com", "href": "mailto:mariomars404@gmail.com" },
+    { "label": "LinkedIn", "value": "linkedin.com/in/marsdev", "href": "https://www.linkedin.com/in/mario-mart%C3%ADnez-693389254" },
+    { "label": "GitHub", "value": "github.com/marsDev10", "href": "https://github.com/marsDev10" }
+  ]
+}

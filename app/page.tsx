@@ -5,6 +5,8 @@ import Link from "next/link";
 
 // Database 
 import copyJSON from "@/app/database/copy.json";
+import navJSON from "@/app/database/nav.json";
+import contactJSON from "@/app/database/contact.json";
 
 type Locale = "es" | "en";
 
@@ -74,28 +76,13 @@ type ContactChannel = {
   href: string;
 };
 
-const navSections = [
-  { id: "hero", href: "#hero" },
-  { id: "projects", href: "#projects" },
-  { id: "contact", href: "#contact" },
-] as const;
+const navSections = navJSON.navigation;
 
 type NavSection = (typeof navSections)[number]["id"];
 
 const copy: Record<Locale, Copy> = copyJSON as Record<Locale, Copy>;
 
-const contactChannels: Record<Locale, ContactChannel[]> = {
-  es: [
-    { label: "Correo", value: "mariomars404@gmail.com", href: "mailto:mariomars404@gmail.com" },
-    { label: "LinkedIn", value: "linkedin.com/in/marsdev", href: "https://www.linkedin.com/in/mario-mart%C3%ADnez-693389254" },
-    { label: "GitHub", value: "github.com/marsdev", href: "https://github.com/marsdev" },
-  ],
-  en: [
-    { label: "Email", value: "mariomars404@gmail.com", href: "mailto:mariomars404@gmail.com" },
-    { label: "LinkedIn", value: "linkedin.com/in/marsdev", href: "https://www.linkedin.com/in/mario-mart%C3%ADnez-693389254" },
-    { label: "GitHub", value: "github.com/marsDev10", href: "https://github.com/marsDev10" },
-  ],
-};
+const contactChannels: Record<Locale, ContactChannel[]> = contactJSON;
 
 const languages: Locale[] = ["es", "en"];
 

@@ -1,0 +1,7 @@
+{
+    "navigation": [
+        { "id": "hero", "href": "#hero" },
+        { "id": "projects", "href": "#projects" },
+        { "id": "contact", "href": "#contact" }
+    ]
+}
