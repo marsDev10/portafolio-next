@@ -7,92 +7,19 @@ import Link from "next/link";
 import copyJSON from "@/app/database/copy.json";
 import navJSON from "@/app/database/nav.json";
 import contactJSON from "@/app/database/contact.json";
-import { Locale } from "./types";
+import { Locale, NavSection } from "./types";
+import { IContactChannel, ICopy, INavigationItem, ISectionTitleProps, ISkillGroup } from "./interfaces";
 
 
-type SkillGroup = {
-  title: string;
-  description: string;
-  items: string[];
-};
+const navSections = navJSON.navigation as INavigationItem[];
 
-type Experience = {
-  company: string;
-  role: string;
-  period: string;
-  summary: string;
-  stack: string[];
-};
+const copy: Record<Locale, ICopy> = copyJSON as Record<Locale, ICopy>;
 
-type Project = {
-  name: string;
-  description: string;
-  impact: string;
-  stack: string[];
-  linkLabel: string;
-  href: string;
-};
-
-type HeroHighlight = {
-  label: string;
-  value: string;
-};
-
-type SectionTitleCopy = {
-  eyebrow: string;
-  title: string;
-  description: string;
-};
-
-type HeroCopy = {
-  badge: string;
-  title: string;
-  description: string;
-  primaryCta: string;
-  secondaryCta: string;
-  highlightTitle: string;
-};
-
-type Copy = {
-  navLabels: Record<NavSection, string>;
-  hero: HeroCopy;
-  heroHighlights: HeroHighlight[];
-  skillsSection: SectionTitleCopy;
-  skillGroups: SkillGroup[];
-  experienceSection: SectionTitleCopy;
-  experiences: Experience[];
-  projectsSection: SectionTitleCopy;
-  projects: Project[];
-  contactSection: {
-    eyebrow: string;
-    title: string;
-    description: string;
-  };
-};
-
-type ContactChannel = {
-  label: string;
-  value: string;
-  href: string;
-};
-
-const navSections = navJSON.navigation;
-
-type NavSection = (typeof navSections)[number]["id"];
-
-const copy: Record<Locale, Copy> = copyJSON as Record<Locale, Copy>;
-
-const contactChannels: Record<Locale, ContactChannel[]> = contactJSON;
+const contactChannels: Record<Locale, IContactChannel[]> = contactJSON;
 
 const languages: Locale[] = ["es", "en"];
 
-type SectionTitleProps = {
-  eyebrow: string;
-  title: string;
-  description?: string;
-};
-
-const SectionTitle = ({ eyebrow, title, description }: SectionTitleProps) => (
+const SectionTitle = ({ eyebrow, title, description }: ISectionTitleProps) => (
   <header className="space-y-3">
     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-zinc-500 dark:text-zinc-400">
       {eyebrow}
@@ -117,13 +44,13 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-between gap-4 sm:flex-row sm:justify-end">
             <div className="flex flex-wrap gap-3 text-sm font-medium text-zinc-500 dark:text-zinc-300">
               {navSections.map((section) => (
-                <a
+                <Link
                   key={section.id}
                   href={section.href}
                   className="rounded-full px-3 py-1 text-sm transition hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-white"
                 >
                   {t.navLabels[section.id]}
-                </a>
+                </Link>
               ))}
             </div>
             <div
