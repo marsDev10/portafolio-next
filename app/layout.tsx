@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import { SpotlightCursor } from "./components/SportlightCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "MarsDev FullStack Developer",
-  description: "Hi! I'm MarsDev, a FullStack Developer specialized in Next.ts and Node.ts.",
+  description:
+    "Hi! I'm MarsDev, a FullStack Developer specialized in Next.ts and Node.ts.",
 };
 
 export default function RootLayout({
@@ -26,10 +27,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased mx-auto container px-4 sm:px-6 lg:px-8`}
-      >
+      className={`
+        ${geistSans.variable}
+        ${geistMono.variable}
+        antialiased
+        min-h-screen
+        text-slate-100
+        relative
+      `}
+    >
+      {/* Glow que sigue al cursor, detrás de todo */}
+      <SpotlightCursor />
+
+      {/* Contenido */}
+      <div className="mx-auto container px-4 sm:px-6 lg:px-8 relative z-10">
         {children}
-      </body>
+      </div>
+    </body>
     </html>
   );
 }
