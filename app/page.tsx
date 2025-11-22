@@ -16,6 +16,7 @@ import {
   INavigationItem,
   ISectionTitleProps,
 } from "./interfaces";
+import { ButtonCV } from "./components/ButtonCV";
 
 const navSections = navJSON.navigation as INavigationItem[];
 
@@ -123,6 +124,7 @@ export default function Home() {
               >
                 {t.hero.secondaryCta}
               </Link>
+              <ButtonCV />
             </div>
           </div>
 
