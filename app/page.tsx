@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 // Database
 import copyJSON from "@/app/database/copy.json";
@@ -17,6 +16,7 @@ import {
   ISectionTitleProps,
 } from "./interfaces";
 import { ButtonCV } from "./components/ButtonCV";
+import { Link } from "lucide-react";
 
 const navSections = navJSON.navigation as INavigationItem[];
 
@@ -49,6 +49,21 @@ export default function Home() {
     setLocale("en");
   };
 
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const offset = 100; // Offset para la navbar
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div className="relative flex min-h-screen font-sans text-zinc-100 bg-transparent">
     <div className="pointer-events-none absolute inset-x-0 top-40 -z-10 mx-auto h-72 max-w-4xl rounded-full bg-emerald-500/25 blur-3xl" />
@@ -61,13 +76,14 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-between gap-4 sm:flex-row sm:justify-end">
             <div className="flex flex-wrap gap-3 text-sm font-medium text-zinc-400">
               {navSections.map((section) => (
-                <Link
+                <a
                   key={section.id}
                   href={section.href}
-                  className="rounded-full px-3 py-1 text-sm transition- duration-150 hover:-translate-y-0.5 hover:bg-zinc-800 hover:text-zinc-50"
+                  onClick={(e) => handleSmoothScroll(e, section.id)}
+                  className="rounded-full px-3 py-1 text-sm transition hover:bg-zinc-700 hover:text-zinc-100"
                 >
                   {t.navLabels[section.id]}
-                </Link>
+                </a>
               ))}
             </div>
 
@@ -112,18 +128,20 @@ export default function Home() {
               <p className="text-lg text-zinc-400">{t.hero.description}</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link
+              <a
                 href="#projects"
+                onClick={(e) => handleSmoothScroll(e, "projects")}
                 className="rounded-full bg-zinc-50 px-6 py-3 text-sm font-semibold text-zinc-900 transition-transform transition-shadow duration-150 hover:-translate-y-0.5 hover:shadow-lg"
               >
                 {t.hero.primaryCta}
-              </Link>
-              <Link
+              </a>
+              <a
                 href="#contact"
+                onClick={(e) => handleSmoothScroll(e, "contact")}
                 className="rounded-full border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-100 transition-colors transition-transform duration-150 hover:-translate-y-0.5 hover:border-zinc-400"
               >
                 {t.hero.secondaryCta}
-              </Link>
+              </a>
               <ButtonCV 
               locale={locale}
               />
@@ -245,7 +263,7 @@ export default function Home() {
                     </span>
                   ))}
                 </div>
-                <Link
+                <a
                   href={project.href}
                   target="_blank"
                   rel="noreferrer"
@@ -253,7 +271,7 @@ export default function Home() {
                 >
                   {project.linkLabel}
                   <span aria-hidden>-&gt;</span>
-                </Link>
+                </a>
               </article>
             ))}
           </div>
@@ -282,14 +300,14 @@ export default function Home() {
                   <span className="text-xs uppercase tracking-widest text-zinc-400">
                     {channel.label}
                   </span>
-                  <Link
+                  <a
                     rel="noopener"
                     target="_blank"
                     href={channel.href}
                     className="text-lg font-semibold text-white hover:text-emerald-200"
                   >
                     {channel.value}
-                  </Link>
+                  </a>
                 </div>
               ))}
             </div>
