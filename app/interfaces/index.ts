@@ -40,6 +40,7 @@ export interface IHeroCopy {
   description: string;
   primaryCta: string;
   secondaryCta: string;
+  threeCta: string;
   highlightTitle: string;
 };
 

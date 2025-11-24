@@ -6,9 +6,11 @@ import { useState } from "react";
 
 interface ButtonCVProps {
   locale?: string;
+  text?: string;
 }
 
-export const ButtonCV = ({ locale }: ButtonCVProps) => {
+export const ButtonCV = ({ 
+  locale, text }: ButtonCVProps) => {
 
   const [downloading, setDownloading] = useState(false);
 
@@ -28,7 +30,7 @@ export const ButtonCV = ({ locale }: ButtonCVProps) => {
     onClick={handleDownload}
     className="cursor-pointer rounded-full border border-zinc-700 px-6 py-3 text-sm font-semibold text-zinc-100 transition-all duration-150 hover:-translate-y-0.5 hover:border-zinc-400"
     >
-      Descargar CV
+      {text}
       <RefreshCw className={`inline-block ml-2 h-4 w-4 ${downloading ? "animate-spin" : ""}`} />
     </Link>
   )

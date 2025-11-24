@@ -11,6 +11,7 @@
       "description": "Lidero el Frontend de Xperience CEM y apoyo módulos backend en Adryo A.I. Entrego CRMs y bots con Twilio/Gupshup que reducen el downtime 30%, escalan a 2k+ usuarios y mejoran la respuesta a leads 40%.",
       "primaryCta": "Ver experiencia",
       "secondaryCta": "Contáctame",
+      "threeCta": "Descargar CV",
       "highlightTitle": "Logros"
     },
     "heroHighlights": [
@@ -118,6 +119,7 @@
       "description": "I lead the Xperience CEM frontend and support backend modules at Adryo A.I. I deliver CRMs and Twilio/Gupshup bots that cut downtime by 30%, scale to 2k+ users, and improve lead response by 40%.",
       "primaryCta": "View experience",
       "secondaryCta": "Get in touch",
+      "threeCta": "Download CV",
       "highlightTitle": "Highlights"
     },
     "heroHighlights": [
