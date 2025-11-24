@@ -19,7 +19,6 @@ const ButtonMusic = () => {
         
         setIsPlaying(true);
       } catch (error) {
-        // Autoplay bloqueado (normal en Chrome / móviles)
         console.warn("Autoplay bloqueado por el navegador", error);
       }
     };
@@ -97,7 +96,7 @@ const ButtonMusic = () => {
       </button>
 
       <audio ref={audioRef} loop preload="auto">
-        <source src="/music/marsdev-theme.m4a" type="audio/mp4" />
+        <source src="music/marsdev-theme.m4a" type="audio/mp4" />
       </audio>
     </>
   );
