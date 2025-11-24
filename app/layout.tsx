@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MarsDev FullStack Developer",
+  title: "Marsdev FullStack Developer",
   description:
-    "Hi! I'm MarsDev, a FullStack Developer specialized in Next.ts and Node.ts.",
+    "Hi! I'm Marsdev, a FullStack Developer specialized in Next.ts and Node.ts.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
       className={`
         ${geistSans.variable}
