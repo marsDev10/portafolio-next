@@ -18,6 +18,7 @@ import {
 import { ButtonCV } from "./components/ButtonCV";
 import { Link } from "lucide-react";
 import { ThreeExample } from "./components/ThreeExample";
+import ButtonMusic from "./components/ButtonMusic";
 
 const navSections = navJSON.navigation as INavigationItem[];
 
@@ -102,6 +103,7 @@ export default function Home() {
       <div 
       ref={mainRef}
       className="relative flex min-h-screen font-sans text-zinc-100 bg-transparent">
+        
         <section 
         ref={threeElement}
         className="min-w-4/12 flex items-center sticky top-10 z-10 h-screen pr-10">
@@ -110,8 +112,12 @@ export default function Home() {
         <section className="">
           <div className="pointer-events-none absolute inset-x-0 top-40 -z-10 mx-auto h-72 max-w-4xl rounded-full bg-emerald-500/25 blur-3xl" />
           <main className="mx-auto flex w-full max-w-5xl flex-col gap-10 py-12 sm:py-16">
+           
               {/* NAV */}
-              <nav className="sticky top-4 z-20 flex flex-col gap-4 rounded-3xl border border-zinc-800 bg-zinc-900/80 p-4 shadow-lg shadow-black/40 backdrop-blur-lg sm:flex-row sm:items-center sm:justify-between">
+              <section className="sticky top-2 right-4 z-21 flex justify-end">
+                <ButtonMusic />
+              </section>
+              <nav className="sticky top-12 z-20 flex flex-col gap-4 rounded-3xl border border-zinc-800 bg-zinc-900/80 p-4 shadow-lg shadow-black/40 backdrop-blur-lg sm:flex-row sm:items-center sm:justify-between">
                 <p className="text-sm font-semibold text-zinc-100">
                   {t.hero.badge}
                 </p>
