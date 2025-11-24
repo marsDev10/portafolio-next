@@ -72,7 +72,7 @@ export default function Home() {
             </div>
 
             {/* Toggle idioma (si lo quieres activar, ya está listo) */}
-            {/* <div
+            <div
               role="group"
               aria-label="Language toggle"
               className="flex items-center rounded-full border border-zinc-700 bg-zinc-900/80 p-1 text-xs font-semibold"
@@ -95,7 +95,7 @@ export default function Home() {
                   </button>
                 );
               })}
-            </div> */}
+            </div>
           </div>
         </nav>
 
@@ -124,7 +124,9 @@ export default function Home() {
               >
                 {t.hero.secondaryCta}
               </Link>
-              <ButtonCV />
+              <ButtonCV 
+              locale={locale}
+              />
             </div>
           </div>
 

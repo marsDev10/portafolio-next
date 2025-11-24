@@ -6,103 +6,96 @@
       "contact": "Contacto"
     },
     "hero": {
-      "badge": "Mario Martinez - Full Stack Engineer",
-      "title": "Impulso plataformas con React, Node y datos accionables.",
-      "description": "Soy un programador Full Stack enfocado en equipos de producto internos. He liderado equipos de frontend usando tecnologías como React y TypeScript. En el backend, utilizando tecnologías como Node y Go, he desarrollado bots de WhatsApp con Twilio, Gupshup y APIs empresariales.",
+      "badge": "Mario Martínez - Full Stack Developer",
+      "title": "Escalo plataformas CX con React, Node y bots en WhatsApp.",
+      "description": "Lidero el Frontend de Xperience CEM y apoyo módulos backend en Adryo A.I. Entrego CRMs y bots con Twilio/Gupshup que reducen el downtime 30%, escalan a 2k+ usuarios y mejoran la respuesta a leads 40%.",
       "primaryCta": "Ver experiencia",
-      "secondaryCta": "Contactame",
+      "secondaryCta": "Contáctame",
       "highlightTitle": "Logros"
     },
     "heroHighlights": [
-      { "label": "Proyectos Full Stack", "value": "3+" },
-      { "label": "Bots en WhatsApp", "value": "50+" },
-      { "label": "Integraciones empresariales", "value": "5+" }
+      { "label": "Reducción de downtime", "value": "30%" },
+      { "label": "Crecimiento de usuarios", "value": "500->2k+" },
+      { "label": "Respuesta a leads", "value": "40% más rápido" }
     ],
     "skillsSection": {
       "eyebrow": "Stack principal",
-      "title": "Tecnologias que uso cada dia",
-      "description": "React, Node, Go y datos empresariales para entregar experiencias consistentes a clientes finales."
+      "title": "Tecnologías que uso cada día",
+      "description": "React, Node, Docker y datos en SQL/NoSQL para productos de soporte y ventas."
     },
     "skillGroups": [
       {
-        "title": "Frontend & Mobile",
-        "description": "Experiencias consistentes para portales CX y apps internas.",
-        "items": ["React + TypeScript", "Next.js / Astro", "React Native", "Design Systems", "Testing UI"]
+        "title": "Frontend & UX",
+        "description": "Interfaces modulares con accesibilidad y performance.",
+        "items": ["React + TypeScript", "Next.js / Astro", "Angular", "Redux & RTK Query", "Tailwind / Bootstrap"]
       },
       {
         "title": "Backend & Data",
-        "description": "APIs y workflows en Node y Go con datos listos para negocio.",
-        "items": ["Node + TypeScript", "Go", "PHP / Python", "MySQL", "MongoDB"]
+        "description": "APIs con autenticación, caching y datos listos para negocio.",
+        "items": ["Node.js + TypeScript", "REST / GraphQL", "MySQL / PostgreSQL", "MongoDB / Redis", "Testing y observabilidad"]
       },
       {
-        "title": "DevOps & Integraciones",
-        "description": "Automatizaciones que conectan herramientas y canales de soporte.",
-        "items": ["Docker", "CI/CD", "Twilio / WhatsApp", "REST / GraphQL", "Observabilidad"]
+        "title": "DevOps e Integraciones",
+        "description": "Automatizaciones que conectan canales y workflows internos.",
+        "items": ["Docker & CI/CD", "Twilio / Gupshup (WhatsApp)", "AWS básico", "Integración de APIs", "Bots y mensajería"]
       }
     ],
     "experienceSection": {
       "eyebrow": "Experiencia profesional",
-      "title": "Mi trayectoria profecional",
-      "description": "Mi experiencia laboral a lo largo de los años se ha centrado en colaborar con equipos internos para mejorar la experiencia del cliente y la automatización."
+      "title": "Mi trayectoria profesional",
+      "description": "Enfocado en reducir tiempos de respuesta y escalar plataformas de autoservicio y soporte."
     },
     "experiences": [
       {
-        "company": "Adryo",
-        "role": "Full Stack Engineer",
-        "period": "2024 - Actualidad",
-        "summary": "Desarrollo de la UI usando React TypeScript y microservicios en Node, creación de bots en WhatsApp con Twilio/Gupshup para automatizar procesos de soporte y ventas para distribuidores internacionales.",
-        "stack": ["Node + TypeScript", "React + TypeScript", "Mongo", "Docker", "MySQL"]
-      },
-      {
-        "company": "Xperience CEM",
-        "role": "Frontend & API Developer",
-        "period": "2023 - 2024",
-        "summary": "Disene el frontend completo del Customer Experience Management y cree rutas en Node TypeScript para recolectar feedback y visibilidad en tiempo real.",
-        "stack": ["React + TypeScript", "Node + TypeScript", "MySQL", "Docker"]
-      },
-      {
-        "company": "Freelance & Startups",
+        "company": "Adryo A.I.",
         "role": "Full Stack Developer",
-        "period": "2018 - 2021",
-        "summary": "Entregue MVPs web y mobile con React Native, Astro y PHP/Python para validar features rapidamente junto a equipos fundadores.",
-        "stack": ["React Native", "Astro", "PHP", "Python", "MongoDB"]
+        "period": "Feb 2025 - Presente",
+        "summary": "Lidero el Frontend de Xperience CEM y apoyo módulos en Node/TypeScript; reduje el downtime 30%, implementé un servicio de autenticación en Redis y llevé la plataforma de 500 a 2k+ usuarios con mejor UX e integridad de datos.",
+        "stack": ["React + TypeScript", "Node.js", "Redis", "MongoDB", "Docker"]
+      },
+      {
+        "company": "Dragoncem",
+        "role": "Full Stack Developer",
+        "period": "Feb 2022 - Dic 2024",
+        "summary": "Construí un CRM que mejoró el tiempo de respuesta a leads en 40% y la velocidad de cierre en 15%; gestioné el ciclo completo del producto y estandaricé procesos elevando la eficiencia del equipo 25%.",
+        "stack": ["Node.js", "React", "MySQL", "Twilio", "Docker"]
       }
     ],
     "projectsSection": {
       "eyebrow": "Casos destacados",
-      "title": "Impacto reciente",
-      "description": "Productos que respaldan mi experiencia profesional."
+      "title": "Proyectos recientes",
+      "description": "Productos alineados a mi experiencia en CX, bots y datos."
     },
     "projects": [
       {
-        "name": "Microservicio de autenticación",
-        "description": "Plantillas reutilizables para bots y microfrontends que conectan Twilio, React Native y APIs internas.",
-        "impact": "Reduce el tiempo de despliegue de nuevos flujos conversacionales a pocas horas.",
-        "stack": ["React + TypeScript", "Node + TypeScript", "Redis", "MySQL", "Docker"],
-        "linkLabel": "Ver referencia",
-        "href": "https://github.com/marsDev10"
-      },
-      {
-        "name": "Migración AdryoCRM",
-        "description": "Migración de la plataforma AdryoCRM a una arquitectura más escalable y moderna.",
-        "impact": "Mejoró la performance y la capacidad de manejo de datos, facilitando el crecimiento del negocio.",
-        "stack": ["React", "Node + TypeScript", "MySQL", "MongoDB"],
-        "linkLabel": "Ver referencia",
-        "href": "https://app.adryo.com.mx/"
-      },
-      {
         "name": "Xperience CEM",
-        "description": "Portal de Customer Experience Management en Adryo con flujos de encuestas, tableros y seguimiento de clientes corporativos.",
-        "impact": "El frontend modular acelero lanzamientos de campanas CX en minutos.",
+        "description": "Frontend modular con componentes reutilizables, routing, autenticación y capas de caché.",
+        "impact": "Soporta 100k+ registros, redujo el downtime 30% y sirve a 2k+ usuarios activos.",
         "stack": ["React + TypeScript", "Node + TypeScript", "MySQL", "MongoDB", "NestJS"],
         "linkLabel": "Visitar plataforma",
         "href": "https://xperience.adryo.com.mx"
       },
       {
-        "name": "DragonCEM",
-        "description": "Creación de bots en PHP y formato JSON para automatizaciones en WhatsApp conectando Twilio con sistemas comerciales de Dragoncem.",
-        "impact": "Automatiza la atencion inicial y enruta solicitudes en tiempo real para el equipo comercial.",
-        "stack": ["Node.js", "PHP", "Twilio", "Docker"],
+        "name": "CRM DeaLider",
+        "description": "CRM con dashboards de reportes, mensajería en tiempo real y bots de WhatsApp automatizados.",
+        "impact": "Mejoró la respuesta a leads 40% y la velocidad de cierre 15% para el equipo comercial.",
+        "stack": ["React", "Node.js", "Redux Toolkit Query", "SQL", "Tailwind"],
+        "linkLabel": "Ver referencia",
+        "href": "https://github.com/marsDev10"
+      },
+      {
+        "name": "LeadCEM",
+        "description": "Componentes reutilizables y endpoints CRUD en Node/TypeScript con autenticación y caché.",
+        "impact": "Estandarizó flujos de alta y mantenimiento de cuentas corporativas.",
+        "stack": ["React + TypeScript", "Node.js", "SQL", "MongoDB", "Docker"],
+        "linkLabel": "Ver referencia",
+        "href": "https://github.com/marsDev10"
+      },
+      {
+        "name": "DragonCEM Bots",
+        "description": "Bots de automatización en JSON/PHP integrados con Twilio y Gupshup para WhatsApp.",
+        "impact": "Automatizan la captación inicial y orquestan flujos de mensajería ligados al sitio corporativo.",
+        "stack": ["PHP", "Node.js", "Twilio", "Gupshup", "Docker"],
         "linkLabel": "Sitio corporativo",
         "href": "https://www.dragoncem.com/en-US/"
       }
@@ -110,7 +103,7 @@
     "contactSection": {
       "eyebrow": "Contacto",
       "title": "Listo para unirme a tu equipo",
-      "description": "Busco roles de tiempo completo enfocados en Frontend, Backend o Full Stack para productos digitales empresariales."
+      "description": "Abierto a roles de tiempo completo (remoto o CDMX) en Frontend, Backend o Full Stack con foco en CX y automatización."
     }
   },
   "en": {
@@ -120,103 +113,104 @@
       "contact": "Contact"
     },
     "hero": {
-      "badge": "Mario Martinez - Full Stack Engineer",
-      "title": "I build CX platforms with React, Node, and actionable data.",
-      "description": "I focus on in-house product teams. I led the frontend for Xperience (Adryo's CEM) and support Dragoncem with Twilio WhatsApp bots plus Node TypeScript APIs.",
+      "badge": "Mario Martinez - Full Stack Developer",
+      "title": "I scale CX platforms with React, Node, and WhatsApp bots.",
+      "description": "I lead the Xperience CEM frontend and support backend modules at Adryo A.I. I deliver CRMs and Twilio/Gupshup bots that cut downtime by 30%, scale to 2k+ users, and improve lead response by 40%.",
       "primaryCta": "View experience",
       "secondaryCta": "Get in touch",
       "highlightTitle": "Highlights"
     },
     "heroHighlights": [
-      { "label": "B2B launches", "value": "8+" },
-      { "label": "Twilio automations", "value": "12" },
-      { "label": "Core technologies", "value": "10" }
+      { "label": "Downtime reduction", "value": "30%" },
+      { "label": "User growth", "value": "500->2k+" },
+      { "label": "Lead response", "value": "40% faster" }
     ],
     "skillsSection": {
       "eyebrow": "Core stack",
-      "title": "Tech I rely on every day",
-      "description": "React, Node, Go, Docker, and data stores that keep CX teams productive."
+      "title": "Tech I use every day",
+      "description": "React, Node, Docker, and SQL/NoSQL data for support and sales products."
     },
     "skillGroups": [
       {
-        "title": "Frontend & Mobile",
-        "description": "Consistent experiences for CX portals and internal apps.",
-        "items": ["React + TypeScript", "Next.js / Astro", "React Native", "Design Systems", "UI Testing"]
+        "title": "Frontend & UX",
+        "description": "Modular interfaces with accessibility and performance.",
+        "items": ["React + TypeScript", "Next.js / Astro", "Angular", "Redux & RTK Query", "Tailwind / Bootstrap"]
       },
       {
         "title": "Backend & Data",
-        "description": "APIs and workflows in Node and Go with business-ready data.",
-        "items": ["Node.js", "Go", "PHP / Python", "MySQL", "MongoDB"]
+        "description": "APIs with authentication, caching, and business-ready data.",
+        "items": ["Node.js + TypeScript", "REST / GraphQL", "MySQL / PostgreSQL", "MongoDB / Redis", "Testing y observabilidad"]
       },
       {
-        "title": "DevOps & Integrations",
-        "description": "Automations that connect support channels and internal tools.",
-        "items": ["Docker", "CI/CD", "Twilio / WhatsApp", "REST / GraphQL", "Observability"]
+        "title": "DevOps e Integraciones",
+        "description": "Automations that connect channels and internal workflows.",
+        "items": ["Docker & CI/CD", "Twilio / Gupshup (WhatsApp)", "AWS básico", "Integración de APIs", "Bots y mensajería"]
       }
     ],
     "experienceSection": {
       "eyebrow": "Professional experience",
-      "title": "Impact on CX and automation",
-      "description": "I partner with internal stakeholders to improve support and loyalty instead of selling services."
+      "title": "My professional track",
+      "description": "Focused on reducing response times and scaling self-service and support platforms."
     },
     "experiences": [
       {
-        "company": "Dragoncem",
-        "role": "Full Stack Engineer",
-        "period": "2023 - Present",
-        "summary": "Build Twilio WhatsApp bots and Node/Go microservices that connect orders, support, and reporting for international distributors.",
-        "stack": ["Node.js", "Go", "Twilio", "Docker", "MySQL"]
-      },
-      {
-        "company": "Adryo - Xperience CEM",
-        "role": "Frontend & API Developer",
-        "period": "2021 - 2023",
-        "summary": "Designed the full React/TypeScript frontend and Node TypeScript routes powering the Customer Experience Management portal.",
-        "stack": ["React", "TypeScript", "Node.js", "MySQL", "Docker"]
-      },
-      {
-        "company": "Freelance & Startups",
+        "company": "Adryo A.I.",
         "role": "Full Stack Developer",
-        "period": "2018 - 2021",
-        "summary": "Delivered web and mobile MVPs with React Native, Astro, and PHP/Python so founders could validate features quickly.",
-        "stack": ["React Native", "Astro", "PHP", "Python", "MongoDB"]
+        "period": "Feb 2025 - Presente",
+        "summary": "I lead the Xperience CEM frontend and support Node/TypeScript modules; I cut downtime by 30%, implemented a Redis authentication service, and scaled the platform from 500 to 2k+ users with better UX and data integrity.",
+        "stack": ["React + TypeScript", "Node.js", "Redis", "MongoDB", "Docker"]
+      },
+      {
+        "company": "Dragoncem",
+        "role": "Full Stack Developer",
+        "period": "Feb 2022 - Dic 2024",
+        "summary": "Built a CRM that improved lead response time by 40% and close speed by 15%; managed the full product lifecycle and standardized processes, raising team efficiency by 25%.",
+        "stack": ["Node.js", "React", "MySQL", "Twilio", "Docker"]
       }
     ],
     "projectsSection": {
       "eyebrow": "Case studies",
-      "title": "Recent impact",
-      "description": "Products that serve business units and their customers."
+      "title": "Recent projects",
+      "description": "Products aligned with my experience in CX, bots, and data."
     },
     "projects": [
       {
         "name": "Xperience CEM",
-        "description": "Customer Experience Management portal for Adryo with survey flows, dashboards, and enterprise account tracking.",
-        "impact": "The modular frontend lets CX campaigns launch in minutes.",
-        "stack": ["React", "TypeScript", "Node.js", "MySQL"],
+        "description": "Modular frontend with reusable components, routing, authentication, and caching layers.",
+        "impact": "Supports 100k+ records, reduced downtime by 30%, and serves 2k+ active users.",
+        "stack": ["React + TypeScript", "Node + TypeScript", "MySQL", "MongoDB", "NestJS"],
         "linkLabel": "Visit platform",
         "href": "https://xperience.adryo.com.mx"
       },
       {
-        "name": "Dragoncem CX Bots",
-        "description": "WhatsApp bots and internal panes connecting Twilio to Dragoncem's commercial systems.",
-        "impact": "Automates intake and routes requests in real time for the sales team.",
-        "stack": ["Node.js", "Go", "Twilio", "Docker"],
-        "linkLabel": "Corporate site",
-        "href": "https://www.dragoncem.com/en-US/"
-      },
-      {
-        "name": "Twilio Service Apps",
-        "description": "Reusable bot templates and microfrontends connecting Twilio, React Native, and internal APIs.",
-        "impact": "Cuts deployment time for new conversational flows down to a few hours.",
-        "stack": ["React Native", "Twilio", "TypeScript", "MongoDB"],
+        "name": "CRM DeaLider",
+        "description": "CRM with reporting dashboards, real-time messaging, and automated WhatsApp bots.",
+        "impact": "Improved lead response by 40% and close speed by 15% for the sales team.",
+        "stack": ["React", "Node.js", "Redux Toolkit Query", "SQL", "Tailwind"],
         "linkLabel": "See reference",
         "href": "https://github.com/marsDev10"
+      },
+      {
+        "name": "LeadCEM",
+        "description": "Reusable components and CRUD endpoints in Node/TypeScript with authentication and caching.",
+        "impact": "Standardized onboarding and maintenance flows for corporate accounts.",
+        "stack": ["React + TypeScript", "Node.js", "SQL", "MongoDB", "Docker"],
+        "linkLabel": "See reference",
+        "href": "https://github.com/marsDev10"
+      },
+      {
+        "name": "DragonCEM Bots",
+        "description": "JSON/PHP automation bots integrated with Twilio and Gupshup for WhatsApp.",
+        "impact": "Automate initial intake and orchestrate messaging flows tied to the corporate site.",
+        "stack": ["PHP", "Node.js", "Twilio", "Gupshup", "Docker"],
+        "linkLabel": "Corporate site",
+        "href": "https://www.dragoncem.com/en-US/"
       }
     ],
     "contactSection": {
       "eyebrow": "Contact",
       "title": "Ready to join your team",
-      "description": "Looking for full-time roles focused on CX, automation, and enterprise digital products."
+      "description": "Open to full-time roles (remote or CDMX) in Frontend, Backend, or Full Stack focused on CX and automation."
     }
   }
 }
